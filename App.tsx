@@ -23,7 +23,7 @@ const App = () => {
           tabBarIcon: ({ focused, color, size }) => {
             let iconName;
 
-            if (route.name === 'MyCases') {
+            if (route.name === 'My Cases') {
               iconName = focused ? 'ios-briefcase' : 'md-briefcase';
               return <Ionicons name={iconName} size={size} color={color} />;
             } else if (route.name === 'Settings') {
@@ -45,7 +45,7 @@ const App = () => {
           },
         })}
       >
-        <Tab.Screen name="MyCases" component={MyCases} options={{ title: 'MyCases' }} />
+        <Tab.Screen name="My Cases" component={MyCases} options={{ title: 'My USCIS Cases' }} />
         <Tab.Screen name="Settings" component={Settings} options={{ title: 'Settings' }} />
       </Tab.Navigator>
     </NavigationContainer>
